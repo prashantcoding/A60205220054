@@ -1,6 +1,9 @@
 import React from 'react'
 import './component.css'
+import { Link, useNavigate } from 'react-router-dom'
 const SingleTrain = ({train}) => {
+  const navgate=useNavigate();
+  
   return (
     
    
@@ -23,6 +26,8 @@ const SingleTrain = ({train}) => {
       <td>{
         <td >{train.delayedBy +"minutes"}</td>
         }</td>
+
+       <Link to={`/train/${train.trainNumber}`}> <td><button  className="button" >Details</button></td></Link>
     </tr>
     
  

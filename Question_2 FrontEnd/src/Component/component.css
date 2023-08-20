@@ -27,3 +27,10 @@
   .singleTrain tr:hover {
     background-color: #e0e0e0;
   }
+  .button{
+    
+    background: #6a62d2;
+    color: white;
+    border: none;
+    padding: .54rem
+  }
