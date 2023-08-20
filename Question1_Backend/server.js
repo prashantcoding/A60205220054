@@ -1,5 +1,7 @@
 let  express = require("express");
 var app = express();
+const cors=require('cors');
+app.use(cors());
 const TrainRoutes=require('./Routes/TrainRoutes')
 var port = 5000;
 app.get("/",(req,res)=>{

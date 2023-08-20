@@ -1,10 +1,16 @@
 import React from 'react'
-
-const SingleTrain = () => {
+import './component.css'
+const SingleTrain = ({train}) => {
   return (
-    <div>
+    
+   
+    <tr>
+      <td>{train.trainName}</td>
+      <td>{train.trainNumber}</td>
       
-    </div>
+    </tr>
+    
+ 
   )
 }
 
